@@ -1,0 +1,73 @@
+date,group,team1,team2,prediction,confidence_%
+2026-06-11,Group A,Mexico,South Africa,Mexico,68
+2026-06-11,Group A,South Korea,Czech Republic,South Korea,61
+2026-06-18,Group A,Czech Republic,South Africa,Czech Republic,36
+2026-06-18,Group A,Mexico,South Korea,Mexico,46
+2026-06-24,Group A,Czech Republic,Mexico,Mexico,68
+2026-06-24,Group A,South Africa,South Korea,South Korea,61
+2026-06-12,Group B,Canada,Bosnia & Herzegovina,Canada,58
+2026-06-13,Group B,Qatar,Switzerland,Switzerland,70
+2026-06-18,Group B,Switzerland,Bosnia & Herzegovina,Switzerland,70
+2026-06-18,Group B,Canada,Qatar,Canada,58
+2026-06-24,Group B,Switzerland,Canada,Switzerland,52
+2026-06-24,Group B,Bosnia & Herzegovina,Qatar,Bosnia & Herzegovina,36
+2026-06-13,Group C,Brazil,Morocco,Brazil,58
+2026-06-13,Group C,Haiti,Scotland,Haiti,36
+2026-06-19,Group C,Scotland,Morocco,Morocco,72
+2026-06-19,Group C,Brazil,Haiti,Brazil,83
+2026-06-24,Group C,Scotland,Brazil,Brazil,83
+2026-06-24,Group C,Morocco,Haiti,Morocco,72
+2026-06-12,Group D,USA,Paraguay,USA,68
+2026-06-13,Group D,Australia,Turkey,Turkey,40
+2026-06-19,Group D,USA,Australia,USA,49
+2026-06-19,Group D,Turkey,Paraguay,Turkey,61
+2026-06-25,Group D,Turkey,USA,USA,46
+2026-06-25,Group D,Paraguay,Australia,Australia,58
+2026-06-14,Group E,Germany,Curaçao,Germany,77
+2026-06-14,Group E,Ivory Coast,Ecuador,Ecuador,49
+2026-06-20,Group E,Germany,Ivory Coast,Germany,68
+2026-06-20,Group E,Ecuador,Curaçao,Ecuador,63
+2026-06-25,Group E,Curaçao,Ivory Coast,Ivory Coast,52
+2026-06-25,Group E,Ecuador,Germany,Germany,58
+2026-06-14,Group F,Netherlands,Japan,Netherlands,58
+2026-06-14,Group F,Sweden,Tunisia,Sweden,55
+2026-06-20,Group F,Netherlands,Sweden,Netherlands,70
+2026-06-20,Group F,Tunisia,Japan,Japan,68
+2026-06-25,Group F,Japan,Sweden,Japan,52
+2026-06-25,Group F,Tunisia,Netherlands,Netherlands,80
+2026-06-15,Group G,Belgium,Egypt,Belgium,66
+2026-06-15,Group G,Iran,New Zealand,Iran,36
+2026-06-21,Group G,Belgium,Iran,Belgium,77
+2026-06-21,Group G,New Zealand,Egypt,Egypt,55
+2026-06-26,Group G,Egypt,Iran,Egypt,55
+2026-06-26,Group G,New Zealand,Belgium,Belgium,77
+2026-06-15,Group H,Spain,Cape Verde,Spain,84
+2026-06-15,Group H,Saudi Arabia,Uruguay,Uruguay,74
+2026-06-21,Group H,Spain,Saudi Arabia,Spain,84
+2026-06-21,Group H,Uruguay,Cape Verde,Uruguay,74
+2026-06-26,Group H,Cape Verde,Saudi Arabia,Cape Verde,36
+2026-06-26,Group H,Uruguay,Spain,Spain,58
+2026-06-16,Group I,France,Senegal,France,70
+2026-06-16,Group I,Iraq,Norway,Norway,63
+2026-06-22,Group I,France,Iraq,France,85
+2026-06-22,Group I,Norway,Senegal,Senegal,40
+2026-06-26,Group I,Norway,France,France,72
+2026-06-26,Group I,Senegal,Iraq,Senegal,66
+2026-06-16,Group J,Argentina,Algeria,Argentina,86
+2026-06-16,Group J,Austria,Jordan,Austria,63
+2026-06-22,Group J,Argentina,Austria,Argentina,74
+2026-06-22,Group J,Jordan,Algeria,Jordan,36
+2026-06-27,Group J,Algeria,Austria,Austria,63
+2026-06-27,Group J,Jordan,Argentina,Argentina,86
+2026-06-17,Group K,Portugal,DR Congo,Portugal,81
+2026-06-17,Group K,Uzbekistan,Colombia,Colombia,72
+2026-06-23,Group K,Portugal,Uzbekistan,Portugal,81
+2026-06-23,Group K,Colombia,DR Congo,Colombia,72
+2026-06-27,Group K,Colombia,Portugal,Portugal,55
+2026-06-27,Group K,DR Congo,Uzbekistan,DR Congo,36
+2026-06-17,Group L,England,Croatia,England,55
+2026-06-17,Group L,Ghana,Panama,Ghana,36
+2026-06-23,Group L,England,Ghana,England,83
+2026-06-23,Group L,Panama,Croatia,Croatia,74
+2026-06-27,Group L,Panama,England,England,83
+2026-06-27,Group L,Croatia,Ghana,Croatia,74

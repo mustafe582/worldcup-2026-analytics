@@ -25,6 +25,7 @@ html, body, [class*="css"] { font-family: 'Sora', sans-serif; }
 .match { margin-bottom: 16px; }
 .match-teams { font-size: 13px; color: #e5e7eb; margin-bottom: 6px; }
 .match-pred { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9ca3af; margin-bottom: 7px; }
+.match-score { color: #c8ff00; }
 .bar { height: 4px; background: #1f1f23; border-radius: 3px; overflow: hidden; }
 .bar-fill { height: 100%; background: #c8ff00; }
 .bar-draw { height: 100%; background: #4b5563; }
@@ -67,7 +68,7 @@ else:
 st.markdown("""
 <div class="hero-label">World Cup 2026 · Prediction Model</div>
 <div class="hero-title">Can data out-predict<br>the pundits?</div>
-<div class="hero-sub">A strength-based model forecasting all 72 group-stage matches — locked before kickoff, tracked live against every result.</div>
+<div class="hero-sub">A model forecasting all 72 group-stage matches from team strength, recent form, travel and altitude — locked before kickoff, tracked live.</div>
 """, unsafe_allow_html=True)
 
 st.markdown(f"""
@@ -86,7 +87,10 @@ for grp in sorted(preds["group"].unique()):
     for _, row in gp.iterrows():
         conf = int(row["confidence_%"])
         fill = "bar-draw" if row["prediction"] == "Draw" else "bar-fill"
-        html += f'<div class="match"><div class="match-teams">{row["team1"]} v {row["team2"]}</div><div class="match-pred">{row["prediction"]} · {conf}%</div><div class="bar"><div class="{fill}" style="width:{conf}%"></div></div></div>'
+        score = row.get("score", "")
+        html += (f'<div class="match"><div class="match-teams">{row["team1"]} v {row["team2"]}</div>'
+                 f'<div class="match-pred">{row["prediction"]} · {conf}% &nbsp;|&nbsp; pred <span class="match-score">{score}</span></div>'
+                 f'<div class="bar"><div class="{fill}" style="width:{conf}%"></div></div></div>')
     html += '</div>'
 html += '</div>'
 st.markdown(html, unsafe_allow_html=True)
@@ -94,6 +98,6 @@ st.markdown(html, unsafe_allow_html=True)
 if played > 0:
     st.markdown('<div class="section-label">Results vs Predictions</div>', unsafe_allow_html=True)
     merged["result"] = merged["correct"].map({True: "✓", False: "✗"})
-    st.dataframe(merged[["date","group","team1","team2","prediction","actual","result"]], use_container_width=True, hide_index=True)
+    st.dataframe(merged[["date","group","team1","team2","prediction","actual","score","result"]], use_container_width=True, hide_index=True)
 else:
     st.markdown('<div class="section-label">Tracking activates June 11</div>', unsafe_allow_html=True)
